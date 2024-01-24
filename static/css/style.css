@@ -1,0 +1,214 @@
+/* Estilos generales */
+.background {
+    background-color: rgba(0, 0, 0, 0.171);
+    position: relative;
+    z-index: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px auto;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.navbar img {
+    width: 255px;
+    height: 105px;
+    margin-left: 30px;
+}
+
+.portal-button {
+    font-family: 'Nunito', sans-serif;
+    background-color: #e5e5e5;
+    color: #161616;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 3px;
+    border-bottom: 4px solid #2f9964;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: 45px;
+}
+
+.portal-button:hover {
+    background-color: #7a7a7a;
+}
+
+/* Estilos para el contenido */
+.contenedor-de-contenido {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+form {
+    max-width: 100%;
+    margin: 0px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-formulario {
+    width: 50%;
+    margin: 0; /* Elimina cualquier margen */
+    padding: 10px; /* Elimina cualquier relleno */
+    border-radius: 10px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-mapa {
+    width: 48%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+
+}
+.mapa{
+    width: 100%;
+    height: 600px;
+    margin:0;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+label {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+select {
+    height: 40px;
+}
+
+input[type="submit"] {
+    background-color: #2f9964;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #7a7a7a;
+}
+
+button[type="button"] {
+    background-color: #2f9964;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #7a7a7a;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container input[type="submit"],
+.button-container button[type="button"] {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.flash-message {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.mensaje {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.right-column {
+    margin-top: 0px;
+    float: right;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+/* Estilos para tamaños de pantalla pequeños (móviles) */
+@media (max-width: 768px) {
+    .contenedor-de-contenido {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .tarjeta-formulario {
+        width: 90%; /* Hacer que el formulario ocupe el ancho completo */
+        margin: 10px 0; /* Agregar un margen superior e inferior */
+    }
+
+    .tarjeta-mapa {
+        width: 90%; /* Hacer que el mapa ocupe el ancho completo */
+    }
+    .form-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .form-column {
+        width: 90%; /* Hacer que las columnas ocupen el ancho completo */
+        text-align: center; /* Centra el contenido de las columnas horizontalmente */
+        margin: 10px auto; /* Centra las columnas horizontalmente y agrega un margen superior e inferior */
+    }
+}
